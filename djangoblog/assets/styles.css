@@ -1,0 +1,161 @@
+:root {
+	--tot-blue: #132257;
+	--secondary: #ecdda8;
+}
+
+body {
+	background: var(--tot-blue);
+	color: #fff;
+	/* background-image: url(tottenham-dark.jpg); */
+	/* background-repeat: no-repeat; */
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a,
+a:hover,
+a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+img {
+	height: 200px;
+}
+
+.main-logo {
+	height: 200px;
+	position: relative;
+	top: -100px;
+	left: -70px;
+}
+
+.wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+div.wrapper h1 {
+	text-align: center;
+	margin: 100px auto;
+	font-size: 2.4rem;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 20px 0;
+}
+
+nav {
+	justify-self: end;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+nav button {
+	background: none;
+	color: #fff;
+	cursor: pointer;
+	border: 0;
+	font-size: 1rem;
+}
+
+.articles {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 30px;
+}
+
+.article {
+	padding: 20px !important;
+	border: 1px solid var(--secondary);
+	position: relative;
+	padding-bottom: 40px;
+}
+
+.article h2 {
+	font-size: 1.2rem;
+}
+
+.article .author {
+	padding: 8px 10px;
+	background: var(--secondary);
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+	color: var(--tot-blue);
+	font-size: 0.8rem;
+}
+
+.article-detail .article {
+	padding: 0;
+}
+
+.article-detail .article img {
+	max-width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+.article-detail .article h2 {
+	text-align: center;
+	margin: 20px auto;
+	font-size: 2rem;
+}
+
+.article-detail .article p {
+	text-align: center;
+}
+
+.site-form {
+	margin-top: 60px;
+	border: 1px solid var(--secondary);
+	padding: 20px;
+}
+
+.site-form input,
+.site-form textarea {
+	display: block;
+	margin: 5px 0 20px 0;
+	padding: 10px;
+}
+
+a.highlight {
+	border: 1px solid var(--secondary);
+	padding: 10px;
+	border-radius: 4px;
+	color: var(--secondary);
+}
+
+.helptext,
+.helptext ul {
+	margin: 0 auto 20px;
+	color: #bbb;
+	font-size: 0.9rem;
+	display: block;
+}
+
+.errorlist li {
+	padding: 10px;
+	list-style-type: none;
+	border: 1px solid #ff5722;
+	color: #ff5722;
+	margin: 10px 0;
+}
+
+.errorlist {
+	padding: 0;
+}
+
+.site-form input[type='submit'] {
+	background: var(--secondary);
+	border: 0;
+	color: #fff;
+	font-size: 1.2rem;
+	border-radius: 4px;
+	margin: 10px 0;
+}
